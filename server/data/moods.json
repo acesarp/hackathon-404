@@ -8,14 +8,14 @@
         "love",
         "surprised"
     ],
-    "Negative and forceful": [
+    "Negative-forceful": [
         "Anger",
         "Annoyance",
         "Contempt",
         "Disgust",
         "Irritation"
     ],
-    "Negative and not in control": [
+    "Negative-not-in-control": [
         "Anxiety",
         "Embarrassment",
         "Fear",
@@ -23,7 +23,7 @@
         "Powerlessness",
         "Worry"
     ],
-    "Negative thoughts": [
+    "Negative-thoughts": [
         "Pride",
         "Doubt",
         "Envy",
@@ -31,7 +31,7 @@
         "Guilt",
         "Shame"
     ],
-    "Negative and passive": [
+    "Negative-passive": [
         "Boredom",
         "Despair",
         "Disappointment",
@@ -42,7 +42,7 @@
         "Shock",
         "Tension"
     ],
-    "Positive and lively": [
+    "Positive-lively": [
         "Amusement",
         "Delight",
         "Elation",
@@ -56,14 +56,14 @@
         "Friendliness",
         "Love"
     ],
-    "Positive thoughts": [
+    "Positive-thoughts": [
         "Courage",
         "Hope",
         "Humility",
         "Satisfaction",
         "Trust"
     ],
-    "Quiet positive": [
+    "Quiet-positive": [
         "Calmness",
         "Contentment",
         "Relaxation",
