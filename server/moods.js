@@ -6,7 +6,7 @@ const { v4: uuidv4 } = require('uuid');
 //
 router.get('/', (req, res) => {
     
-    console.log(uuidv4());
+    console.log(moodList["mood-list"]);
 
     res.send(moodList["mood-list"]);
 }); 
