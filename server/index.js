@@ -2,12 +2,13 @@ let express = require('express');
 let app = express();
 let port = process.env.PORT || '5001';
 let router = express.Router();
-
+const moods = require('./data/moods.json');
 
 // 
-router.get('/', (req, res) => {
+router.get('/:id', (req, res) => {
+    console.info(req.params);
+    req.params.id;
 
-    
 
     res.send();
 });
