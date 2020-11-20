@@ -1,37 +1,42 @@
 {
     "mood-list": [
-        "happy",
-        "sad",
-        "angry",
-        "guilty",
-        "confused",
-        "love",
-        "surprised"
-    ],
-    "Negative-forceful": [
+        { "happy": "happydog.jpg" },
+        {"sad": "saddog.jpg" },
+        {"angry": "angrydog.jpg" },
+        {"guilty": "guiltydog.jpg" },
+        {"confused": "confuseddog.jpg" },
+        {"love": "lovedog.jpg" },
+        {"surprised": "supriseddog.jpg" }
+    ]
+,
+
+    "negative-forceful": [
         "Anger",
         "Annoyance",
         "Contempt",
         "Disgust",
-        "Irritation"
+        "Irritation",
+        {"image": ""}
     ],
-    "Negative-not-in-control": [
+    "negative-not-in-control": [
         "Anxiety",
         "Embarrassment",
         "Fear",
         "Helplessness",
         "Powerlessness",
-        "Worry"
+        "Worry",
+        { "image": "" }
     ],
-    "Negative-thoughts": [
+    "negative-thoughts": [
         "Pride",
         "Doubt",
         "Envy",
         "Frustration",
         "Guilt",
-        "Shame"
+        "Shame",
+        { "image": "" }
     ],
-    "Negative-passive": [
+    "negative-passive": [
         "Boredom",
         "Despair",
         "Disappointment",
@@ -40,9 +45,10 @@
         "Agitation",
         "Stress",
         "Shock",
-        "Tension"
+        "Tension",
+        { "image": "" }
     ],
-    "Positive-lively": [
+    "positive-lively": [
         "Amusement",
         "Delight",
         "Elation",
@@ -54,16 +60,18 @@
         "Affection",
         "Empathy",
         "Friendliness",
-        "Love"
+        "Love",
+        { "image": "" }
     ],
-    "Positive-thoughts": [
+    "positive-thoughts": [
         "Courage",
         "Hope",
         "Humility",
         "Satisfaction",
-        "Trust"
+        "Trust",
+        { "image": "" }
     ],
-    "Quiet-positive": [
+    "quiet-positive": [
         "Calmness",
         "Contentment",
         "Relaxation",
@@ -72,6 +80,7 @@
         "Reactive",
         "Interest",
         "Politeness",
-        "Surprise"
+        "Surprise",
+        { "image": "" }
     ]
 }

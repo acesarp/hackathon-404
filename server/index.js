@@ -2,9 +2,10 @@ let express = require('express');
 let app = express();
 let cors = require('cors');
 let path = require('path');
-let port = process.env.PORT || '5001';
+const port = process.env.PORT || '5001';
+app.set('port', port);
 let router = express.Router();
-const moods = require('./data/moods.json');
+const moods = require('./moods.js');
 
 
 app.use(express.static(path.join(__dirname, 'public')));
@@ -12,17 +13,11 @@ app.use(cors({ origin: '*' }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-// 
-router.get('/:id', (req, res) => {
-    console.info(req.params);
-    
-    const payload = moods.filter(value => value.id === req.params.id)
-    res.send(payload);
+
+app.use('/moods', moods);
+
+app.listen(app.get('port'), () => {
+    console.log(`App listening at http://localhost:${app.get('port')}`);
 });
 
-
-const server = app.listen(port, () => {
-    console.log(`Example app listening at http://localhost:${app.get('port')}`);
-});
-
-    module.exports = app;
+module.exports = app;
