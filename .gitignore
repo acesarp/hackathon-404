@@ -1,3 +1,40 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+node_modules/
+/.pnp
+.pnp.js
+mock-ups/
+assets/
+
+# testing
+/coverage
+
+# production
+/build
+
+# Ignore system files
 .DS_Store
-*.zip
-*.pdf
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+*[Tt]humbs.db
+*.Trashes
+
+# Editor files
+.vscode/*
+*.sublime-workspace
+
+# misc
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.css.map
