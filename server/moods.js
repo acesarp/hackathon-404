@@ -2,6 +2,7 @@ let express = require('express');
 let router = express.Router();
 const moodList = require('./assets/moods.json');
 const { v4: uuidv4 } = require('uuid');
+let path = require('path');
 
 //
 router.get('/', (req, res) => {
@@ -11,11 +12,10 @@ router.get('/', (req, res) => {
     res.send(moodList["mood-list"]);
 }); 
 
-router.get('/:id', (req, res) => {
-    console.info(req.params.id);
-    console.log(uuidv4);
-    //const payload = moodList.filter(value => value.id === req.params.id);
-    //res.send(payload);
+router.get('/:imageName', (req, res) => {
+    console.info(req.params.imageName);
+
+    res.sendFile(path.join(__dirname, `assets/images/${req.params.imageName}dog.jpg`));
 });
 
 router.get('/*', (req, res) => {
